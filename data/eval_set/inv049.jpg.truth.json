@@ -1,0 +1,96 @@
+{
+ "id": "inv049",
+ "direction": "purchase",
+ "category": "خدمات",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "مؤسسه حسابداری دقیق‌کار",
+  "economic_code": "320008062320",
+  "national_id": "10983263890",
+  "national_code": null,
+  "registration_no": "928414",
+  "address": "تبریز، خیابان ولیعصر، پلاک 229",
+  "phone": "02178066717"
+ },
+ "buyer": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "header": {
+  "invoice_no": "31042",
+  "date_jalali": "1405/06/13",
+  "unique_tax_id": "A5620884725"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "طراحی و راه‌اندازی وبسایت",
+   "quantity": 1,
+   "unit": "پروژه",
+   "unit_price": 36239000,
+   "discount": 0,
+   "line_total": 36239000,
+   "line_tax": 3623900
+  },
+  {
+   "row": 2,
+   "description": "خدمات حسابداری ماهانه",
+   "quantity": 1,
+   "unit": "ماه",
+   "unit_price": 13252000,
+   "discount": 0,
+   "line_total": 13252000,
+   "line_tax": 1325200
+  },
+  {
+   "row": 3,
+   "description": "طراحی و راه‌اندازی وبسایت",
+   "quantity": 1,
+   "unit": "پروژه",
+   "unit_price": 41632000,
+   "discount": 4163000,
+   "line_total": 37469000,
+   "line_tax": 3746900
+  },
+  {
+   "row": 4,
+   "description": "تعمیر و نگهداری تجهیزات",
+   "quantity": 8,
+   "unit": "ساعت",
+   "unit_price": 966000,
+   "discount": 386000,
+   "line_total": 7342000,
+   "line_tax": 734200
+  }
+ ],
+ "totals": {
+  "subtotal": 98851000,
+  "total_discount": 4549000,
+  "vat": 9430200,
+  "other_levies": 0,
+  "payable": 103732200
+ },
+ "payment": {
+  "method": "چک",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "skewed",
+  "digits": "fa",
+  "style": "b"
+ },
+ "file": "inv049.jpg",
+ "sha256": "1b9f479ba88e72206033550b9d03418f9e83976d0ffa2cc6bff1f57ead234cf1"
+}

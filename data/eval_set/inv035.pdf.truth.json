@@ -1,0 +1,88 @@
+{
+ "id": "inv035",
+ "direction": "sale",
+ "category": "فروش کالا",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "فروشگاه مبلمان آسایش",
+  "economic_code": "073587355706",
+  "national_id": "36060710430",
+  "national_code": null,
+  "registration_no": "95545",
+  "address": "شیراز، خیابان ولیعصر، پلاک 69",
+  "phone": "02154409103"
+ },
+ "header": {
+  "invoice_no": "18950",
+  "date_jalali": "1405/05/04",
+  "unique_tax_id": "A1975100145"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "کابینت فلزی اداری",
+   "quantity": 12,
+   "unit": "عدد",
+   "unit_price": 10501000,
+   "discount": 0,
+   "line_total": 126012000,
+   "line_tax": 12601200
+  },
+  {
+   "row": 2,
+   "description": "صندلی مدیریتی",
+   "quantity": 2,
+   "unit": "عدد",
+   "unit_price": 7450000,
+   "discount": 745000,
+   "line_total": 14155000,
+   "line_tax": 1415500
+  },
+  {
+   "row": 3,
+   "description": "طراحی و ساخت پارتیشن اداری",
+   "quantity": 9,
+   "unit": "متر",
+   "unit_price": 4173000,
+   "discount": 0,
+   "line_total": 37557000,
+   "line_tax": 3755700
+  }
+ ],
+ "totals": {
+  "subtotal": 178389000,
+  "total_discount": 745000,
+  "vat": 17772400,
+  "other_levies": 0,
+  "payable": 195416400
+ },
+ "payment": {
+  "method": "پایانه فروش",
+  "notes": null
+ },
+ "defects": [
+  "SUM_MISMATCH"
+ ],
+ "injection": false,
+ "render": {
+  "quality": "pdf_scan",
+  "digits": "en",
+  "style": "b"
+ },
+ "file": "inv035.pdf",
+ "sha256": "addd517ece7fa0ce62ff2d77b83805f1842f5d5ef6642fdaf85f1fb762d362a3"
+}

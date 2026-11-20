@@ -1,0 +1,106 @@
+{
+ "id": "inv034",
+ "direction": "purchase",
+ "category": "حمل‌ونقل",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "حمل و نقل آرمان ترابر",
+  "economic_code": "620420785827",
+  "national_id": "08425606344",
+  "national_code": null,
+  "registration_no": "22832",
+  "address": "کرج، بلوار کشاورز، پلاک 214",
+  "phone": "02119742329"
+ },
+ "buyer": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "header": {
+  "invoice_no": "74810",
+  "date_jalali": "1405/04/06",
+  "unique_tax_id": "A2576686430"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "حمل بار درون‌شهری",
+   "quantity": 4,
+   "unit": "سرویس",
+   "unit_price": 1221000,
+   "discount": 0,
+   "line_total": 4884000,
+   "line_tax": 488400
+  },
+  {
+   "row": 2,
+   "description": "حمل بار درون‌شهری",
+   "quantity": 12,
+   "unit": "سرویس",
+   "unit_price": 1316000,
+   "discount": 1579000,
+   "line_total": 14213000,
+   "line_tax": 1421300
+  },
+  {
+   "row": 3,
+   "description": "حمل بار درون‌شهری",
+   "quantity": 6,
+   "unit": "سرویس",
+   "unit_price": 1791000,
+   "discount": 537000,
+   "line_total": 10209000,
+   "line_tax": 1020900
+  },
+  {
+   "row": 4,
+   "description": "کرایه حمل با کامیون ده‌چرخ",
+   "quantity": 1,
+   "unit": "سرویس",
+   "unit_price": 7435000,
+   "discount": 372000,
+   "line_total": 7063000,
+   "line_tax": 706300
+  },
+  {
+   "row": 5,
+   "description": "کرایه حمل با کامیون ده‌چرخ",
+   "quantity": 11,
+   "unit": "سرویس",
+   "unit_price": 6234000,
+   "discount": 0,
+   "line_total": 68574000,
+   "line_tax": 6857400
+  }
+ ],
+ "totals": {
+  "subtotal": 107431000,
+  "total_discount": 2488000,
+  "vat": 10494300,
+  "other_levies": 0,
+  "payable": 115437300
+ },
+ "payment": {
+  "method": "کارت‌به‌کارت",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "pdf_text",
+  "digits": "ar",
+  "style": "a"
+ },
+ "file": "inv034.pdf",
+ "sha256": "0b2467b4667f952bf915539773d29e941f675e05bd4d5b4e20f3aa545d58dac5"
+}

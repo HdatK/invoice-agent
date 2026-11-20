@@ -1,0 +1,106 @@
+{
+ "id": "inv025",
+ "direction": "sale",
+ "category": "فروش کالا",
+ "currency": "IRR",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "شرکت پخش مواد غذایی نیک",
+  "economic_code": "906044319829",
+  "national_id": "65724920864",
+  "national_code": null,
+  "registration_no": "88909",
+  "address": "تبریز، جاده مخصوص کرج، پلاک 23",
+  "phone": "02100251678"
+ },
+ "header": {
+  "invoice_no": "2744",
+  "date_jalali": "1405/04/02",
+  "unique_tax_id": "A5617884227"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "کابینت فلزی اداری",
+   "quantity": 11,
+   "unit": "عدد",
+   "unit_price": 156490000,
+   "discount": 0,
+   "line_total": 1721390000,
+   "line_tax": 172139000
+  },
+  {
+   "row": 2,
+   "description": "طراحی و ساخت پارتیشن اداری",
+   "quantity": 6,
+   "unit": "متر",
+   "unit_price": 47210000,
+   "discount": 14160000,
+   "line_total": 269100000,
+   "line_tax": 26910000
+  },
+  {
+   "row": 3,
+   "description": "میز کنفرانس ده‌نفره",
+   "quantity": 11,
+   "unit": "عدد",
+   "unit_price": 311670000,
+   "discount": 171420000,
+   "line_total": 3256950000,
+   "line_tax": 325695000
+  },
+  {
+   "row": 4,
+   "description": "طراحی و ساخت پارتیشن اداری",
+   "quantity": 2,
+   "unit": "متر",
+   "unit_price": 44910000,
+   "discount": 0,
+   "line_total": 89820000,
+   "line_tax": 8982000
+  },
+  {
+   "row": 5,
+   "description": "صندلی مدیریتی",
+   "quantity": 5,
+   "unit": "عدد",
+   "unit_price": 71020000,
+   "discount": 17760000,
+   "line_total": 337340000,
+   "line_tax": 33734000
+  }
+ ],
+ "totals": {
+  "subtotal": 5877940000,
+  "total_discount": 203340000,
+  "vat": 567460000,
+  "other_levies": 0,
+  "payable": 6242060000
+ },
+ "payment": {
+  "method": "نسیه",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "pdf_text",
+  "digits": "ar",
+  "style": "b"
+ },
+ "file": "inv025.pdf",
+ "sha256": "eb44cc622c8355cfb750e7737c52ddab2cfbaa51bde8b1eb3b55235ef8010530"
+}

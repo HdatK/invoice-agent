@@ -1,0 +1,88 @@
+{
+ "id": "inv024",
+ "direction": "sale",
+ "category": "فروش کالا",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "شرکت ساختمانی بنیان‌گذاران",
+  "economic_code": "181590830166",
+  "national_id": "13186091395",
+  "national_code": null,
+  "registration_no": "99603",
+  "address": "تهران، خیابان شریعتی، پلاک 76",
+  "phone": "02162819482"
+ },
+ "header": {
+  "invoice_no": "91890",
+  "date_jalali": "1405/02/01",
+  "unique_tax_id": "A6567193628"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "صندلی مدیریتی",
+   "quantity": 7,
+   "unit": "عدد",
+   "unit_price": 6648000,
+   "discount": 0,
+   "line_total": 46536000,
+   "line_tax": 4653600
+  },
+  {
+   "row": 2,
+   "description": "کابینت فلزی اداری",
+   "quantity": 11,
+   "unit": "عدد",
+   "unit_price": 9896000,
+   "discount": 0,
+   "line_total": 108856000,
+   "line_tax": 10885600
+  },
+  {
+   "row": 3,
+   "description": "میز کنفرانس ده‌نفره",
+   "quantity": 7,
+   "unit": "عدد",
+   "unit_price": 40566000,
+   "discount": 0,
+   "line_total": 283962000,
+   "line_tax": 28396200
+  }
+ ],
+ "totals": {
+  "subtotal": 439434000,
+  "total_discount": 0,
+  "vat": 43935400,
+  "other_levies": 0,
+  "payable": 483369400
+ },
+ "payment": {
+  "method": "نقدی",
+  "notes": null
+ },
+ "defects": [
+  "SUM_MISMATCH"
+ ],
+ "injection": false,
+ "render": {
+  "quality": "lowlight",
+  "digits": "fa",
+  "style": "b"
+ },
+ "file": "inv024.jpg",
+ "sha256": "0a074ece0c6a52c70a4a1f27656074c3ef3e6035178e6f54d8500812898f5abb"
+}

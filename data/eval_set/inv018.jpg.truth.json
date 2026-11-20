@@ -1,0 +1,78 @@
+{
+ "id": "inv018",
+ "direction": "purchase",
+ "category": "سایر",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "فروشگاه لوازم‌التحریر ایران",
+  "economic_code": "883143667640",
+  "national_id": "20679701682",
+  "national_code": null,
+  "registration_no": "731322",
+  "address": "شیراز، بلوار کشاورز، پلاک 213",
+  "phone": "02171800239"
+ },
+ "buyer": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "header": {
+  "invoice_no": "18850",
+  "date_jalali": "1405/13/05",
+  "unique_tax_id": "A1470677061"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "ملزومات اداری و لوازم‌التحریر",
+   "quantity": 12,
+   "unit": "بسته",
+   "unit_price": 1816000,
+   "discount": 2179000,
+   "line_total": 19613000,
+   "line_tax": 1961300
+  },
+  {
+   "row": 2,
+   "description": "ملزومات اداری و لوازم‌التحریر",
+   "quantity": 1,
+   "unit": "بسته",
+   "unit_price": 2614000,
+   "discount": 131000,
+   "line_total": 2483000,
+   "line_tax": 248300
+  }
+ ],
+ "totals": {
+  "subtotal": 24406000,
+  "total_discount": 2310000,
+  "vat": 2209600,
+  "other_levies": 0,
+  "payable": 24305600
+ },
+ "payment": {
+  "method": "کارت‌به‌کارت",
+  "notes": null
+ },
+ "defects": [
+  "BAD_DATE"
+ ],
+ "injection": false,
+ "render": {
+  "quality": "clean",
+  "digits": "en",
+  "style": "b"
+ },
+ "file": "inv018.jpg",
+ "sha256": "4e8251a705251e1825f7ca5c0a810d0ee37bde661b31ecdcfd193ee4b4fd555b"
+}

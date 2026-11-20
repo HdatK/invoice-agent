@@ -1,0 +1,88 @@
+{
+ "id": "inv032",
+ "direction": "sale",
+ "category": "فروش خدمات",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "unofficial",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "مجتمع آموزشی دانش‌پژوهان",
+  "economic_code": "327523682991",
+  "national_id": "84373817183",
+  "national_code": null,
+  "registration_no": "46327",
+  "address": "مشهد، خیابان ولیعصر، پلاک 125",
+  "phone": "02172737289"
+ },
+ "header": {
+  "invoice_no": "62698",
+  "date_jalali": "1405/05/19",
+  "unique_tax_id": null
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "طراحی و ساخت پارتیشن اداری",
+   "quantity": 12,
+   "unit": "متر",
+   "unit_price": 5028000,
+   "discount": 0,
+   "line_total": 60336000,
+   "line_tax": 0
+  },
+  {
+   "row": 2,
+   "description": "کابینت فلزی اداری",
+   "quantity": 3,
+   "unit": "عدد",
+   "unit_price": 11665000,
+   "discount": 0,
+   "line_total": 34995000,
+   "line_tax": 0
+  },
+  {
+   "row": 3,
+   "description": "میز کنفرانس ده‌نفره",
+   "quantity": 11,
+   "unit": "عدد",
+   "unit_price": 35026000,
+   "discount": 38529000,
+   "line_total": 346757000,
+   "line_tax": 0
+  }
+ ],
+ "totals": {
+  "subtotal": 480647000,
+  "total_discount": 38529000,
+  "vat": 0,
+  "other_levies": 0,
+  "payable": 442118000
+ },
+ "payment": {
+  "method": "چک",
+  "notes": null
+ },
+ "defects": [
+  "SUM_MISMATCH"
+ ],
+ "injection": false,
+ "render": {
+  "quality": "blurry",
+  "digits": "ar",
+  "style": "b"
+ },
+ "file": "inv032.jpg",
+ "sha256": "180190c3f5d75615424c4e11794c8aeb01e88c0aad05d032ba8ea5220d8d8b9d"
+}

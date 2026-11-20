@@ -1,0 +1,66 @@
+{
+ "id": "inv042",
+ "direction": "purchase",
+ "category": "تجهیزات",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "فروشگاه رایانه امید",
+  "economic_code": "116372651676",
+  "national_id": "12220297296",
+  "national_code": null,
+  "registration_no": "528820",
+  "address": "تهران، بلوار کشاورز، پلاک 136",
+  "phone": "02126330434"
+ },
+ "buyer": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "header": {
+  "invoice_no": "9639",
+  "date_jalali": "1405/02/07",
+  "unique_tax_id": "A8381841093"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "میز اداری",
+   "quantity": 6,
+   "unit": "عدد",
+   "unit_price": 10197000,
+   "discount": 0,
+   "line_total": 61182000,
+   "line_tax": 6118200
+  }
+ ],
+ "totals": {
+  "subtotal": 61182000,
+  "total_discount": 0,
+  "vat": 6118200,
+  "other_levies": 0,
+  "payable": 67300200
+ },
+ "payment": {
+  "method": "نقدی",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "lowlight",
+  "digits": "fa",
+  "style": "b"
+ },
+ "file": "inv042.jpg",
+ "sha256": "fc4831ce312ad4ca0c81a8fb5b286be6f636b4a1d9db74c6f11f45bd00e38c7a"
+}

@@ -1,0 +1,76 @@
+{
+ "id": "inv065",
+ "direction": "sale",
+ "category": "فروش کالا",
+ "currency": "IRR",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "proforma",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "شرکت بازرگانی کاوه",
+  "economic_code": "687780063943",
+  "national_id": "69919220019",
+  "national_code": null,
+  "registration_no": "92520",
+  "address": "تهران، خیابان ولیعصر، پلاک 37",
+  "phone": "02101019538"
+ },
+ "header": {
+  "invoice_no": "23751",
+  "date_jalali": "1405/01/13",
+  "unique_tax_id": null
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "کابینت فلزی اداری",
+   "quantity": 5,
+   "unit": "عدد",
+   "unit_price": 102120000,
+   "discount": 0,
+   "line_total": 510600000,
+   "line_tax": 51060000
+  },
+  {
+   "row": 2,
+   "description": "طراحی و ساخت پارتیشن اداری",
+   "quantity": 10,
+   "unit": "متر",
+   "unit_price": 51310000,
+   "discount": 0,
+   "line_total": 513100000,
+   "line_tax": 51310000
+  }
+ ],
+ "totals": {
+  "subtotal": 1023700000,
+  "total_discount": 0,
+  "vat": 102370000,
+  "other_levies": 0,
+  "payable": 1126070000
+ },
+ "payment": {
+  "method": "پایانه فروش",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "clean",
+  "digits": "ar",
+  "style": "a"
+ },
+ "file": "inv065.jpg",
+ "sha256": "49a5b8a87a1c56e81e01775e4b3b336447843ebd9b833e176cb6ce1d9eaa3736"
+}

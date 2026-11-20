@@ -1,0 +1,68 @@
+{
+ "id": "inv002",
+ "direction": "purchase",
+ "category": "حمل‌ونقل",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "باربری سریع‌الوصول",
+  "economic_code": "212233079244",
+  "national_id": "02685995282",
+  "national_code": null,
+  "registration_no": "78666",
+  "address": "مشهد، بلوار کشاورز، پلاک 125",
+  "phone": "02160313721"
+ },
+ "buyer": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "header": {
+  "invoice_no": "48659",
+  "date_jalali": "1405/13/05",
+  "unique_tax_id": "A3635981472"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "کرایه حمل با کامیون ده‌چرخ",
+   "quantity": 10,
+   "unit": "سرویس",
+   "unit_price": 5269000,
+   "discount": 5269000,
+   "line_total": 47421000,
+   "line_tax": 4742100
+  }
+ ],
+ "totals": {
+  "subtotal": 52690000,
+  "total_discount": 5269000,
+  "vat": 4742100,
+  "other_levies": 0,
+  "payable": 52163100
+ },
+ "payment": {
+  "method": "نقدی",
+  "notes": null
+ },
+ "defects": [
+  "BAD_DATE"
+ ],
+ "injection": false,
+ "render": {
+  "quality": "clean",
+  "digits": "fa",
+  "style": "b"
+ },
+ "file": "inv002.jpg",
+ "sha256": "c317c9dfb6671dd94c0276bc45f69070439f1165e0808d9c4ae0094c71756641"
+}

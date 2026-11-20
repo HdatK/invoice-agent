@@ -1,0 +1,106 @@
+{
+ "id": "inv006",
+ "direction": "purchase",
+ "category": "مواد اولیه",
+ "currency": "IRR",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت پروفیل سازان شرق",
+  "economic_code": "131144024264",
+  "national_id": "62889751408",
+  "national_code": null,
+  "registration_no": "61401",
+  "address": "اصفهان، بلوار کشاورز، پلاک 157",
+  "phone": "02131417058"
+ },
+ "buyer": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "header": {
+  "invoice_no": "5843",
+  "date_jalali": "1405/05/09",
+  "unique_tax_id": "A1065911072"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "پروفیل ۴۰×۴۰ گالوانیزه",
+   "quantity": 1,
+   "unit": "شاخه",
+   "unit_price": 4750000,
+   "discount": 0,
+   "line_total": 4750000,
+   "line_tax": 475000
+  },
+  {
+   "row": 2,
+   "description": "پروفیل ۴۰×۴۰ گالوانیزه",
+   "quantity": 5,
+   "unit": "شاخه",
+   "unit_price": 3760000,
+   "discount": 0,
+   "line_total": 18800000,
+   "line_tax": 1880000
+  },
+  {
+   "row": 3,
+   "description": "پروفیل ۴۰×۴۰ گالوانیزه",
+   "quantity": 5,
+   "unit": "شاخه",
+   "unit_price": 5100000,
+   "discount": 2550000,
+   "line_total": 22950000,
+   "line_tax": 2295000
+  },
+  {
+   "row": 4,
+   "description": "پروفیل ۴۰×۴۰ گالوانیزه",
+   "quantity": 5,
+   "unit": "شاخه",
+   "unit_price": 5840000,
+   "discount": 2920000,
+   "line_total": 26280000,
+   "line_tax": 2628000
+  },
+  {
+   "row": 5,
+   "description": "پروفیل ۴۰×۴۰ گالوانیزه",
+   "quantity": 5,
+   "unit": "شاخه",
+   "unit_price": 5320000,
+   "discount": 0,
+   "line_total": 26600000,
+   "line_tax": 2660000
+  }
+ ],
+ "totals": {
+  "subtotal": 104850000,
+  "total_discount": 5470000,
+  "vat": 9938000,
+  "other_levies": 0,
+  "payable": 109318000
+ },
+ "payment": {
+  "method": "پایانه فروش",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "lowlight",
+  "digits": "fa",
+  "style": "b"
+ },
+ "file": "inv006.jpg",
+ "sha256": "0c41724f48ec93a273fc6e65088816dfdc6d8c30f2d679ab9d128e054ca64692"
+}

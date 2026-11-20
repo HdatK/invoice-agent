@@ -1,0 +1,9 @@
+<li class="row st-{{ r.status }}" id="row-{{ r.id }}" {% if r.status == 'processing' %}hx-get="/invoices/{{ r.id }}/row" hx-trigger="every 2s" hx-swap="outerHTML"{% endif %}>
+  <button class="rowbtn" hx-get="/invoices/{{ r.id }}/review" hx-target="#review" hx-swap="innerHTML">
+    <span class="nm">{{ r.source_file.original_name if r.source_file else ('فاکتور ' ~ r.id) }}</span>
+    <span class="badge b-{{ r.status }}">{{ r.status|status }}</span>
+    {% if r.status == 'processing' %}<span class="bar"><i></i></span>{% endif %}
+    {% if r.status == 'needs_review' %}<span class="muted">{{ (r.issues|selectattr('severity','ne','info')|list|length)|fa }} مورد برای بررسی</span>{% endif %}
+    {% if r.error_message and r.status in ('failed','rejected') %}<span class="muted">{{ r.error_message }}</span>{% endif %}
+  </button>
+</li>

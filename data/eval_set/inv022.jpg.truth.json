@@ -1,0 +1,96 @@
+{
+ "id": "inv022",
+ "direction": "sale",
+ "category": "فروش کالا",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "unofficial",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "شرکت بازرگانی کاوه",
+  "economic_code": "687780063943",
+  "national_id": "69919220019",
+  "national_code": null,
+  "registration_no": "92520",
+  "address": "تهران، خیابان ولیعصر، پلاک 37",
+  "phone": "02101019538"
+ },
+ "header": {
+  "invoice_no": "45107",
+  "date_jalali": "1405/03/11",
+  "unique_tax_id": null
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "کابینت فلزی اداری",
+   "quantity": 4,
+   "unit": "عدد",
+   "unit_price": 10726000,
+   "discount": 0,
+   "line_total": 42904000,
+   "line_tax": 0
+  },
+  {
+   "row": 2,
+   "description": "کابینت فلزی اداری",
+   "quantity": 1,
+   "unit": "عدد",
+   "unit_price": 9289000,
+   "discount": 0,
+   "line_total": 9289000,
+   "line_tax": 0
+  },
+  {
+   "row": 3,
+   "description": "صندلی مدیریتی",
+   "quantity": 8,
+   "unit": "عدد",
+   "unit_price": 5919000,
+   "discount": 0,
+   "line_total": 47352000,
+   "line_tax": 0
+  },
+  {
+   "row": 4,
+   "description": "کابینت فلزی اداری",
+   "quantity": 11,
+   "unit": "عدد",
+   "unit_price": 10720000,
+   "discount": 0,
+   "line_total": 117920000,
+   "line_tax": 0
+  }
+ ],
+ "totals": {
+  "subtotal": 217465000,
+  "total_discount": 0,
+  "vat": 0,
+  "other_levies": 0,
+  "payable": 217465000
+ },
+ "payment": {
+  "method": "نسیه",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "skewed",
+  "digits": "ar",
+  "style": "a"
+ },
+ "file": "inv022.jpg",
+ "sha256": "8b51556ff1c5b8e1245e5b7c71984fdf96c611c8144eee7abafe044776facacb"
+}

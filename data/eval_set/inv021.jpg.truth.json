@@ -1,0 +1,88 @@
+{
+ "id": "inv021",
+ "direction": "purchase",
+ "category": "خدمات",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "مؤسسه حسابداری دقیق‌کار",
+  "economic_code": "320008062320",
+  "national_id": "10983263890",
+  "national_code": null,
+  "registration_no": "928414",
+  "address": "تبریز، خیابان ولیعصر، پلاک 229",
+  "phone": "02178066717"
+ },
+ "buyer": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "header": {
+  "invoice_no": "73586",
+  "date_jalali": "1405/06/21",
+  "unique_tax_id": "A8212258901"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "خدمات حسابداری ماهانه",
+   "quantity": 1,
+   "unit": "ماه",
+   "unit_price": 22805000,
+   "discount": 0,
+   "line_total": 22805000,
+   "line_tax": 2280500
+  },
+  {
+   "row": 2,
+   "description": "خدمات حسابداری ماهانه",
+   "quantity": 1,
+   "unit": "ماه",
+   "unit_price": 17629000,
+   "discount": 0,
+   "line_total": 17629000,
+   "line_tax": 1762900
+  },
+  {
+   "row": 3,
+   "description": "طراحی و راه‌اندازی وبسایت",
+   "quantity": 1,
+   "unit": "پروژه",
+   "unit_price": 21763000,
+   "discount": 0,
+   "line_total": 21763000,
+   "line_tax": 2176300
+  }
+ ],
+ "totals": {
+  "subtotal": 62197000,
+  "total_discount": 0,
+  "vat": 9330550,
+  "other_levies": 0,
+  "payable": 71527550
+ },
+ "payment": {
+  "method": "پایانه فروش",
+  "notes": null
+ },
+ "defects": [
+  "VAT_MISMATCH"
+ ],
+ "injection": false,
+ "render": {
+  "quality": "skewed",
+  "digits": "ar",
+  "style": "b"
+ },
+ "file": "inv021.jpg",
+ "sha256": "4814a1cd722570145308b7c66738f67abf47fe34eaa16f1363212b28a7c2695a"
+}

@@ -1,0 +1,78 @@
+{
+ "id": "inv052",
+ "direction": "sale",
+ "category": "فروش کالا",
+ "currency": "IRR",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "شرکت ساختمانی بنیان‌گذاران",
+  "economic_code": "181590830166",
+  "national_id": "13186091395",
+  "national_code": null,
+  "registration_no": "99603",
+  "address": "تهران، خیابان شریعتی، پلاک 76",
+  "phone": "02162819482"
+ },
+ "header": {
+  "invoice_no": "12784",
+  "date_jalali": "1405/01/05",
+  "unique_tax_id": "A5024171381"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "صندلی مدیریتی",
+   "quantity": 1,
+   "unit": "عدد",
+   "unit_price": 78410000,
+   "discount": 3920000,
+   "line_total": 74490000,
+   "line_tax": 7449000
+  },
+  {
+   "row": 2,
+   "description": "کابینت فلزی اداری",
+   "quantity": 11,
+   "unit": "عدد",
+   "unit_price": 157880000,
+   "discount": 0,
+   "line_total": 1736680000,
+   "line_tax": 173668000
+  }
+ ],
+ "totals": {
+  "subtotal": 1814290000,
+  "total_discount": 3920000,
+  "vat": 181117000,
+  "other_levies": 0,
+  "payable": 1991487000
+ },
+ "payment": {
+  "method": "پایانه فروش",
+  "notes": null
+ },
+ "defects": [
+  "SUM_MISMATCH"
+ ],
+ "injection": false,
+ "render": {
+  "quality": "pdf_text",
+  "digits": "fa",
+  "style": "a"
+ },
+ "file": "inv052.pdf",
+ "sha256": "374d56d9e3f080369df3ea75fb468bae09805b334b9c146507b65caa4209e897"
+}

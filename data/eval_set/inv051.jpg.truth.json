@@ -1,0 +1,76 @@
+{
+ "id": "inv051",
+ "direction": "sale",
+ "category": "فروش کالا",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "هتل آپارتمان ستاره",
+  "economic_code": "711777741215",
+  "national_id": "47280385287",
+  "national_code": null,
+  "registration_no": "84148",
+  "address": "اصفهان، خیابان شریعتی، پلاک 93",
+  "phone": "02138885393"
+ },
+ "header": {
+  "invoice_no": "8529",
+  "date_jalali": "1405/03/06",
+  "unique_tax_id": "A9002833637"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "صندلی مدیریتی",
+   "quantity": 6,
+   "unit": "عدد",
+   "unit_price": 9140000,
+   "discount": 0,
+   "line_total": 54840000,
+   "line_tax": 5484000
+  },
+  {
+   "row": 2,
+   "description": "خدمات نصب و راه‌اندازی",
+   "quantity": 7,
+   "unit": "ساعت",
+   "unit_price": 1539000,
+   "discount": 0,
+   "line_total": 10773000,
+   "line_tax": 1077300
+  }
+ ],
+ "totals": {
+  "subtotal": 65613000,
+  "total_discount": 0,
+  "vat": 6561300,
+  "other_levies": 0,
+  "payable": 72174300
+ },
+ "payment": {
+  "method": "نقدی",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "lowlight",
+  "digits": "fa",
+  "style": "b"
+ },
+ "file": "inv051.jpg",
+ "sha256": "4b5cea707c84b175b5f12e283b328da377ffe96b549196436d781c29a0647e22"
+}

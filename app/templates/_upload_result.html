@@ -1,0 +1,3 @@
+{% for e in errors %}<li class="row st-failed"><span class="nm">{{ e }}</span></li>{% endfor %}
+{% for r in rows %}{% include "_row.html" %}{% endfor %}
+{% if rows %}<template data-open="{{ rows[0].id }}"></template>{% endif %}

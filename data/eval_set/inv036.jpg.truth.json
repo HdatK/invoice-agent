@@ -1,0 +1,66 @@
+{
+ "id": "inv036",
+ "direction": "purchase",
+ "category": "تجهیزات",
+ "currency": "IRR",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "unofficial",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت تجهیزات اداری پیشرو",
+  "economic_code": "929130721206",
+  "national_id": "10524844260",
+  "national_code": null,
+  "registration_no": "50699",
+  "address": "تهران، بلوار نلسون ماندلا، پلاک 147",
+  "phone": "02180169671"
+ },
+ "buyer": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "header": {
+  "invoice_no": "89924",
+  "date_jalali": "1405/06/09",
+  "unique_tax_id": null
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "لپ‌تاپ ۱۵ اینچ",
+   "quantity": 1,
+   "unit": "دستگاه",
+   "unit_price": 595280000,
+   "discount": 59530000,
+   "line_total": 535750000,
+   "line_tax": 0
+  }
+ ],
+ "totals": {
+  "subtotal": 595280000,
+  "total_discount": 59530000,
+  "vat": 0,
+  "other_levies": 0,
+  "payable": 535750000
+ },
+ "payment": {
+  "method": "پایانه فروش",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "clean",
+  "digits": "ar",
+  "style": "a"
+ },
+ "file": "inv036.jpg",
+ "sha256": "77fdbe109acdf2678b3ccc5cfd0d4f2935b43fc17cfe0bb1cc74339ab805cfdd"
+}

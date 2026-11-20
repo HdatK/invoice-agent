@@ -1,0 +1,5 @@
+<table class="sub"><thead><tr><th>#</th><th>شرح</th><th>تعداد</th><th>واحد</th><th>قیمت واحد</th><th>تخفیف</th><th>مبلغ ردیف</th><th>مالیات</th></tr></thead><tbody>
+{% for it in inv.items %}<tr><td>{{ it.row_no|fa }}</td><td>{{ it.description or '—' }}</td><td>{{ (it.quantity|int if it.quantity is not none and it.quantity == it.quantity|int else it.quantity)|fa }}</td><td>{{ it.unit or '—' }}</td>
+<td class="num">{{ it.unit_price|money }}</td><td class="num">{{ it.discount|money }}</td><td class="num">{{ it.line_total|money }}</td><td class="num">{{ it.line_tax|money }}</td></tr>
+{% else %}<tr><td colspan="8" class="muted">ردیفی ثبت نشده.</td></tr>{% endfor %}</tbody></table>
+{% if inv.issues %}<ul class="iss">{% for i in inv.issues %}<li class="{{ i.severity }}">{{ i.message_fa }}</li>{% endfor %}</ul>{% endif %}

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}آپلود فاکتور{% endblock %}
+{% block main %}
+<p class="notice"><strong>برای دمو فقط فاکتور نمونه یا ساختگی آپلود کنید.</strong>
+  داده‌های شما فقط برای خود شما دیده می‌شود و بعد از {{ ttl|int|fa }} ساعت بی‌فعالیتی پاک می‌شود؛ فایل‌ها زودتر حذف می‌شوند.
+  {% if provider == 'mock' %}<br>حالت آزمایشی (Mock): فقط فاکتورهای نمونهٔ پایین همین صفحه خوانده می‌شوند.{% endif %}</p>
+
+<section class="up">
+  <form id="upform" hx-post="/ui/upload" hx-encoding="multipart/form-data" hx-target="#mylist" hx-swap="afterbegin">
+    <div id="drop" class="drop" tabindex="0">
+      <input type="file" id="fileinput" name="files" multiple accept="image/jpeg,image/png,application/pdf" hidden>
+      <p><strong>فاکتور را اینجا رها کنید</strong> یا <button type="button" class="link" id="pick">فایل انتخاب کنید</button></p>
+      <p class="muted">JPG، PNG یا PDF · تا {{ max_files|fa }} فایل · هر فایل تا {{ max_mb|fa }} مگابایت</p>
+      <progress id="prog" max="100" value="0" hidden></progress>
+    </div>
+    <fieldset class="dirsel"><legend>نوع فاکتور</legend>
+      <label><input type="radio" name="direction" value="auto" checked> تشخیص خودکار</label>
+      <label><input type="radio" name="direction" value="purchase"> فاکتور خرید (هزینه)</label>
+      <label><input type="radio" name="direction" value="sale"> فاکتور فروش (درآمد)</label>
+    </fieldset>
+  </form>
+  <details class="biz"><summary>اطلاعات کسب‌وکار من (برای تشخیص خرید/فروش و نرخ مالیات)</summary>
+    <form hx-post="/settings" hx-target="#bizmsg" hx-swap="innerHTML" class="inline">
+      <label>نام <input name="name" value="{{ biz.name if biz and biz.name else '' }}"></label>
+      <label>کد اقتصادی <input name="economic_code" dir="ltr" value="{{ biz.economic_code if biz and biz.economic_code else '' }}"></label>
+      <label>نرخ مالیات ٪ <input name="vat_rate" dir="ltr" size="3" value="{{ ((biz.vat_rate if biz else settings.vat_rate)*100)|round|int }}"></label>
+      <button>ذخیره</button> <span id="bizmsg"></span>
+    </form>
+  </details>
+  {% if samples %}<details class="biz"><summary>فاکتورهای نمونه برای امتحان</summary>
+    <p class="muted">دانلود کنید و در کادر بالا بیندازید:</p>
+    <p>{% for n in samples %}<a href="/samples/{{ n }}" download>{{ n }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p></details>{% endif %}
+</section>
+
+<section class="work">
+  <aside>
+    <h2>فایل‌های من</h2>
+    <ul id="mylist" class="list">{% for r in mine %}{% include "_row.html" %}{% endfor %}</ul>
+    {% if not mine %}<p class="muted" id="empty">هنوز فایلی آپلود نکرده‌اید.</p>{% endif %}
+  </aside>
+  <div id="review" class="review" {% if open_id %}hx-get="/invoices/{{ open_id }}/review" hx-trigger="load" hx-swap="innerHTML"{% endif %}>
+    <p class="muted placeholder">یک فاکتور را انتخاب کنید یا آپلود کنید تا اینجا کنار تصویرش بازبینی شود.</p>
+  </div>
+</section>
+{% endblock %}

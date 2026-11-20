@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}استخراج فاکتور{% endblock %} · نمونهٔ ایجنت فاکتور</title>
+<meta name="htmx-config" content='{"allowEval":false,"includeIndicatorStyles":false}'>
+<link rel="stylesheet" href="/static/app.css">
+<script src="/static/vendor/htmx.min.js"></script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/upload">ایجنت فاکتور</a>
+  <nav aria-label="صفحه‌ها">
+    <a href="/upload" {% if page=='upload' %}aria-current="page"{% endif %}>آپلود و بازبینی</a>
+    <a href="/charts" {% if page=='charts' %}aria-current="page"{% endif %}>دخل و خرج</a>
+    <a href="/database" {% if page=='database' %}aria-current="page"{% endif %}>دیتابیس</a>
+  </nav>
+  <button class="ghost" id="reset" title="پاک‌کردن آپلودهای من">بازنشانی دمو</button>
+</header>
+<main>{% block main %}{% endblock %}</main>
+<script src="/static/app.js"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

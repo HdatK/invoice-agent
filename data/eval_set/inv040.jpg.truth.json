@@ -1,0 +1,68 @@
+{
+ "id": "inv040",
+ "direction": "sale",
+ "category": "فروش کالا",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "شرکت بازرگانی کاوه",
+  "economic_code": "687780063943",
+  "national_id": "69919220019",
+  "national_code": null,
+  "registration_no": "92520",
+  "address": "تهران، خیابان ولیعصر، پلاک 37",
+  "phone": "02101019538"
+ },
+ "header": {
+  "invoice_no": "57442",
+  "date_jalali": "1405/02/20",
+  "unique_tax_id": "A9856717465"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "میز کنفرانس ده‌نفره",
+   "quantity": 9,
+   "unit": "عدد",
+   "unit_price": 41456000,
+   "discount": 18655000,
+   "line_total": 354449000,
+   "line_tax": 35444900
+  }
+ ],
+ "totals": {
+  "subtotal": 373104000,
+  "total_discount": 18655000,
+  "vat": 53168350,
+  "other_levies": 0,
+  "payable": 407617350
+ },
+ "payment": {
+  "method": "نقدی",
+  "notes": null
+ },
+ "defects": [
+  "VAT_MISMATCH"
+ ],
+ "injection": false,
+ "render": {
+  "quality": "skewed",
+  "digits": "ar",
+  "style": "a"
+ },
+ "file": "inv040.jpg",
+ "sha256": "9f7a83def347473f9f45eb400033246f452d4dee8f1baae85412b25cb11d2a03"
+}

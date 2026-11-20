@@ -1,0 +1,96 @@
+{
+ "id": "inv001",
+ "direction": "sale",
+ "category": "فروش کالا",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "کلینیک تخصصی مهرگان",
+  "economic_code": "574911862527",
+  "national_id": "60189555971",
+  "national_code": null,
+  "registration_no": "114710",
+  "address": "تبریز، خیابان ملاصدرا، پلاک 167",
+  "phone": "02197465075"
+ },
+ "header": {
+  "invoice_no": "18947",
+  "date_jalali": "1405/05/29",
+  "unique_tax_id": "A8813747417"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "کابینت فلزی اداری",
+   "quantity": 4,
+   "unit": "عدد",
+   "unit_price": 15444000,
+   "discount": 0,
+   "line_total": 61776000,
+   "line_tax": 6177600
+  },
+  {
+   "row": 2,
+   "description": "میز کنفرانس ده‌نفره",
+   "quantity": 12,
+   "unit": "عدد",
+   "unit_price": 33309000,
+   "discount": 19985000,
+   "line_total": 379723000,
+   "line_tax": 37972300
+  },
+  {
+   "row": 3,
+   "description": "خدمات نصب و راه‌اندازی",
+   "quantity": 8,
+   "unit": "ساعت",
+   "unit_price": 984000,
+   "discount": 0,
+   "line_total": 7872000,
+   "line_tax": 787200
+  },
+  {
+   "row": 4,
+   "description": "خدمات نصب و راه‌اندازی",
+   "quantity": 7,
+   "unit": "ساعت",
+   "unit_price": 1476000,
+   "discount": 0,
+   "line_total": 10332000,
+   "line_tax": 1033200
+  }
+ ],
+ "totals": {
+  "subtotal": 479688000,
+  "total_discount": 19985000,
+  "vat": 45970300,
+  "other_levies": 0,
+  "payable": 505673300
+ },
+ "payment": {
+  "method": "پایانه فروش",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "clean",
+  "digits": "ar",
+  "style": "b"
+ },
+ "file": "inv001.jpg",
+ "sha256": "9a8a32b737417a3c8fd33df4f3fae2dfda84fca2ba5970ed78c0d6b65ade01a4"
+}

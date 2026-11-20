@@ -1,0 +1,86 @@
+{
+ "id": "inv061",
+ "direction": "purchase",
+ "category": "حمل‌ونقل",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "unofficial",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "حمل و نقل آرمان ترابر",
+  "economic_code": "620420785827",
+  "national_id": "08425606344",
+  "national_code": null,
+  "registration_no": "22832",
+  "address": "کرج، بلوار کشاورز، پلاک 214",
+  "phone": "02119742329"
+ },
+ "buyer": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "header": {
+  "invoice_no": "32289",
+  "date_jalali": "1405/05/29",
+  "unique_tax_id": null
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "کرایه حمل با کامیون ده‌چرخ",
+   "quantity": 6,
+   "unit": "سرویس",
+   "unit_price": 5424000,
+   "discount": 0,
+   "line_total": 32544000,
+   "line_tax": 0
+  },
+  {
+   "row": 2,
+   "description": "حمل بار درون‌شهری",
+   "quantity": 1,
+   "unit": "سرویس",
+   "unit_price": 2207000,
+   "discount": 0,
+   "line_total": 2207000,
+   "line_tax": 0
+  },
+  {
+   "row": 3,
+   "description": "کرایه حمل با کامیون ده‌چرخ",
+   "quantity": 5,
+   "unit": "سرویس",
+   "unit_price": 4789000,
+   "discount": 0,
+   "line_total": 23945000,
+   "line_tax": 0
+  }
+ ],
+ "totals": {
+  "subtotal": 58696000,
+  "total_discount": 0,
+  "vat": 0,
+  "other_levies": 0,
+  "payable": 58696000
+ },
+ "payment": {
+  "method": "نقدی",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "pdf_text",
+  "digits": "fa",
+  "style": "b"
+ },
+ "file": "inv061.pdf",
+ "sha256": "588f0ed1c8100a119b8a1ff36db40ba2fc32dcc68d4f3804355c8821223f7c50"
+}

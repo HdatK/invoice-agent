@@ -1,0 +1,86 @@
+{
+ "id": "inv031",
+ "direction": "sale",
+ "category": "فروش کالا",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "مجتمع آموزشی دانش‌پژوهان",
+  "economic_code": "327523682991",
+  "national_id": "84373817183",
+  "national_code": null,
+  "registration_no": "46327",
+  "address": "مشهد، خیابان ولیعصر، پلاک 125",
+  "phone": "02172737289"
+ },
+ "header": {
+  "invoice_no": "83934",
+  "date_jalali": "1405/05/12",
+  "unique_tax_id": "A1351068236"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "صندلی مدیریتی",
+   "quantity": 10,
+   "unit": "عدد",
+   "unit_price": 7867000,
+   "discount": 0,
+   "line_total": 78670000,
+   "line_tax": 7867000
+  },
+  {
+   "row": 2,
+   "description": "خدمات نصب و راه‌اندازی",
+   "quantity": 9,
+   "unit": "ساعت",
+   "unit_price": 1056000,
+   "discount": 0,
+   "line_total": 9504000,
+   "line_tax": 950400
+  },
+  {
+   "row": 3,
+   "description": "کابینت فلزی اداری",
+   "quantity": 8,
+   "unit": "عدد",
+   "unit_price": 12138000,
+   "discount": 0,
+   "line_total": 97104000,
+   "line_tax": 9710400
+  }
+ ],
+ "totals": {
+  "subtotal": 185278000,
+  "total_discount": 0,
+  "vat": 18527800,
+  "other_levies": 0,
+  "payable": 203805800
+ },
+ "payment": {
+  "method": "چک",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "skewed",
+  "digits": "fa",
+  "style": "b"
+ },
+ "file": "inv031.jpg",
+ "sha256": "34b6fd9ed5eebebeee599380990a880a944917407ecd25fe8a71df7c7dd9e410"
+}

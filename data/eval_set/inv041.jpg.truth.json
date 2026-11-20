@@ -1,0 +1,106 @@
+{
+ "id": "inv041",
+ "direction": "sale",
+ "category": "فروش خدمات",
+ "currency": "IRR",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "شرکت ساختمانی بنیان‌گذاران",
+  "economic_code": "181590830166",
+  "national_id": "13186091395",
+  "national_code": null,
+  "registration_no": "99603",
+  "address": "تهران، خیابان شریعتی، پلاک 76",
+  "phone": "02162819482"
+ },
+ "header": {
+  "invoice_no": "21433",
+  "date_jalali": "1405/04/11",
+  "unique_tax_id": "A1557766354"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "خدمات نصب و راه‌اندازی",
+   "quantity": 6,
+   "unit": "ساعت",
+   "unit_price": 13230000,
+   "discount": 0,
+   "line_total": 79380000,
+   "line_tax": 7938000
+  },
+  {
+   "row": 2,
+   "description": "کابینت فلزی اداری",
+   "quantity": 7,
+   "unit": "عدد",
+   "unit_price": 159280000,
+   "discount": 0,
+   "line_total": 1114960000,
+   "line_tax": 111496000
+  },
+  {
+   "row": 3,
+   "description": "طراحی و ساخت پارتیشن اداری",
+   "quantity": 4,
+   "unit": "متر",
+   "unit_price": 46250000,
+   "discount": 0,
+   "line_total": 185000000,
+   "line_tax": 18500000
+  },
+  {
+   "row": 4,
+   "description": "خدمات نصب و راه‌اندازی",
+   "quantity": 5,
+   "unit": "ساعت",
+   "unit_price": 12610000,
+   "discount": 0,
+   "line_total": 63050000,
+   "line_tax": 6305000
+  },
+  {
+   "row": 5,
+   "description": "خدمات نصب و راه‌اندازی",
+   "quantity": 1,
+   "unit": "ساعت",
+   "unit_price": 11930000,
+   "discount": 0,
+   "line_total": 11930000,
+   "line_tax": 1193000
+  }
+ ],
+ "totals": {
+  "subtotal": 1454320000,
+  "total_discount": 0,
+  "vat": 145432000,
+  "other_levies": 0,
+  "payable": 1599752000
+ },
+ "payment": {
+  "method": "کارت‌به‌کارت",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "blurry",
+  "digits": "ar",
+  "style": "a"
+ },
+ "file": "inv041.jpg",
+ "sha256": "3dacb6cee7dc80309ffe58ee6f2550312193ba173d884443f2a0983865de1700"
+}

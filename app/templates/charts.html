@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}دخل و خرج{% endblock %}
+{% block main %}
+<form id="cf" class="filters">
+  <label>از تاریخ <input name="date_from" dir="ltr" placeholder="۱۴۰۵/۰۱/۰۱" size="10"></label>
+  <label>تا تاریخ <input name="date_to" dir="ltr" placeholder="۱۴۰۵/۱۲/۲۹" size="10"></label>
+  <label>دسته‌بندی <select name="category"><option value="">همه</option>{% for c in cats %}<option value="{{ c.id }}">{{ c.name_fa }}</option>{% endfor %}</select></label>
+  <button type="reset" class="ghost">پاک‌کردن فیلتر</button>
+</form>
+<p id="pending" class="muted"></p>
+<section class="cards">
+  <div class="k inc"><span>جمع درآمد</span><b id="k-income">—</b></div>
+  <div class="k exp"><span>جمع هزینه</span><b id="k-expense">—</b></div>
+  <div class="k net"><span>سود خالص</span><b id="k-profit">—</b></div>
+  <div class="k"><span>تعداد فاکتور</span><b id="k-count">—</b></div>
+  <div class="k"><span>مالیات پرداختی / دریافتی</span><b id="k-vat">—</b></div>
+</section>
+<p class="muted">همهٔ مبالغ به تومان و بدون مالیات ارزش افزوده است. فقط فاکتورهای تأییدشده حساب می‌شوند؛ پیش‌فاکتورها حساب نمی‌شوند.</p>
+<section class="grid">
+  <div class="chart wide"><h2>درآمد و هزینهٔ ماهانه</h2><div id="c-monthly"></div></div>
+  <div class="chart"><h2>هزینه بر اساس دسته‌بندی</h2><div id="c-cat"></div></div>
+  <div class="chart"><h2>بیشترین تأمین‌کنندگان</h2><div id="c-sellers"></div></div>
+  <div class="chart"><h2>بیشترین مشتریان</h2><div id="c-buyers"></div></div>
+</section>
+{% endblock %}
+{% block scripts %}<script src="/static/vendor/echarts.min.js"></script><script src="/static/charts.js"></script>{% endblock %}

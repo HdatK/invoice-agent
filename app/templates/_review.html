@@ -1,0 +1,77 @@
+{% macro fld(name, label, value, fmt='', cls='') -%}
+{% set iss = by_field.get(name, []) %}{% set c = conf.get(name) %}
+{% set state = 'err' if iss|selectattr('severity','eq','error')|list else ('warn' if iss|selectattr('severity','eq','warning')|list else '') %}
+<label class="fld {{ state }} {{ cls }}"><span class="lb">{{ label }}{% if state and c is not none and c < 1 %} <em>اطمینان {{ (c*100)|round|int|fa }}٪</em>{% endif %}</span>
+  <input name="{{ name }}" value="{% if value is none %}{% elif fmt == 'money' %}{{ value|money }}{% else %}{{ value }}{% endif %}" {% if fmt in ('money','id','date') %}dir="ltr"{% endif %} {% if not editable %}readonly{% endif %}>
+  {% for i in iss %}<small class="msg {{ i.severity }}">{{ i.message_fa }}</small>{% endfor %}</label>
+{%- endmacro %}
+{% if inv.status == 'processing' %}
+<div class="state" hx-get="/invoices/{{ inv.id }}/review" hx-trigger="every 2s" hx-target="#review" hx-swap="innerHTML">
+  <p><strong>در حال خواندن فاکتور…</strong></p><span class="bar big"><i></i></span>
+  <p class="muted">پیش‌پردازش تصویر، استخراج، اعتبارسنجی و خوانش دوم مستقل.</p></div>
+{% elif inv.status in ('failed', 'rejected') %}
+<div class="state err"><p><strong>{{ 'این فایل پردازش نشد' if inv.status == 'failed' else 'فایل پذیرفته نشد' }}</strong></p>
+  <p>{{ inv.error_message }}</p>
+  {% if editable %}<p>{% if inv.status == 'failed' and file_ok %}<button hx-post="/invoices/{{ inv.id }}/retry" hx-target="#review" hx-swap="innerHTML">تلاش دوباره</button>{% endif %}
+  <button class="ghost" data-del="{{ inv.id }}">حذف</button></p>{% endif %}</div>
+{% else %}
+<div class="rv-head">
+  <h2>فاکتور {{ inv.invoice_no|fa if inv.invoice_no else '(بدون شماره)' }}</h2>
+  <span class="badge b-{{ inv.status }}">{{ inv.status|status }}</span>
+  {% if inv.invoice_kind == 'proforma' %}<span class="badge b-info">پیش‌فاکتور: در نمودار حساب نمی‌شود</span>{% endif %}
+  {% if not editable %}<span class="badge b-info">داده نمونه · فقط‌خواندنی</span>{% endif %}
+</div>
+{% if flash %}<p class="flash ok">{{ flash }}</p>{% endif %}{% if flash_err %}<p class="flash bad">{{ flash_err }}</p>{% endif %}
+<div class="split">
+  <figure class="pane">
+    {% if file_ok %}<img src="/invoices/{{ inv.id }}/preview" alt="تصویر فاکتور"><figcaption><a href="/invoices/{{ inv.id }}/file" target="_blank" rel="noopener">باز کردن فایل اصلی</a></figcaption>
+    {% else %}<p class="muted">تصویر دیگر موجود نیست (فایل‌های آپلودی به‌زودی خودکار پاک می‌شوند).</p>{% endif %}
+  </figure>
+  <form id="rv" class="fields" hx-target="#review" hx-swap="innerHTML">
+    {% set gl = by_field.get('document', []) + by_field.get('direction', []) + by_field.get('items', []) %}
+    {% for i in gl %}<p class="msg {{ i.severity }}">{{ i.message_fa }}</p>{% endfor %}
+    <fieldset><legend>نوع و دسته‌بندی</legend>
+      <label class="fld"><span class="lb">نوع</span><select name="direction" {% if not editable %}disabled{% endif %}>
+        <option value="purchase" {{ 'selected' if inv.direction == 'purchase' }}>خرید (هزینه)</option><option value="sale" {{ 'selected' if inv.direction == 'sale' }}>فروش (درآمد)</option></select></label>
+      <label class="fld"><span class="lb">دسته‌بندی</span><select name="category_id" {% if not editable %}disabled{% endif %}>
+        <option value="">—</option>{% for c in cats if c.kind in (('income','both') if inv.direction == 'sale' else ('expense','both')) %}<option value="{{ c.id }}" {{ 'selected' if inv.category_id == c.id }}>{{ c.name_fa }}</option>{% endfor %}</select></label>
+      <label class="fld"><span class="lb">نوع سند</span><select name="kind" {% if not editable %}disabled{% endif %}>
+        {% for k, t in [('official_sale','رسمی'),('unofficial','غیررسمی'),('proforma','پیش‌فاکتور'),('unknown','نامشخص')] %}<option value="{{ k }}" {{ 'selected' if inv.invoice_kind == k }}>{{ t }}</option>{% endfor %}</select></label>
+      <label class="fld {{ 'err' if by_field.get('currency') }}"><span class="lb">واحد پول فاکتور</span><select name="currency" {% if not editable %}disabled{% endif %}>
+        <option value="" {{ 'selected' if not inv.currency }}>مشخص نیست</option><option value="IRT" {{ 'selected' if inv.currency == 'IRT' }}>تومان</option><option value="IRR" {{ 'selected' if inv.currency == 'IRR' }}>ریال</option></select>
+        {% for i in by_field.get('currency', []) %}<small class="msg error">{{ i.message_fa }}</small>{% endfor %}</label>
+    </fieldset>
+    <fieldset><legend>سربرگ</legend>
+      {{ fld('invoice_no', 'شماره فاکتور', inv.invoice_no) }}{{ fld('date_jalali', 'تاریخ (شمسی)', inv.date_jalali, 'date') }}{{ fld('unique_tax_id', 'شناسه یکتا', inv.unique_tax_id, 'id') }}
+    </fieldset>
+    <fieldset><legend>فروشنده</legend>
+      {{ fld('seller_name', 'نام', inv.seller_name) }}{{ fld('seller_economic_code', 'کد اقتصادی', inv.seller_economic_code, 'id') }}{{ fld('seller_national_id', 'شناسه ملی', inv.seller_national_id, 'id') }}
+      {{ fld('seller_registration_no', 'شماره ثبت', inv.seller_registration_no, 'id') }}{{ fld('seller_address', 'نشانی', inv.seller_address, '', 'wide') }}{{ fld('seller_phone', 'تلفن', inv.seller_phone, 'id') }}
+    </fieldset>
+    <fieldset><legend>خریدار</legend>
+      {{ fld('buyer_name', 'نام', inv.buyer_name) }}{{ fld('buyer_economic_code', 'کد اقتصادی', inv.buyer_economic_code, 'id') }}{{ fld('buyer_national_code', 'کد ملی', inv.buyer_national_code, 'id') }}{{ fld('buyer_address', 'نشانی', inv.buyer_address, '', 'wide') }}
+    </fieldset>
+    <fieldset class="items"><legend>ردیف‌ها</legend>
+      <div class="scroll"><table><thead><tr><th>#</th><th>شرح</th><th>تعداد</th><th>واحد</th><th>قیمت واحد</th><th>تخفیف</th><th>مبلغ ردیف</th><th>مالیات</th></tr></thead><tbody>
+      {% for it in inv.items %}{% set r = it.row_no %}<tr>
+        <td>{{ r|fa }}</td>
+        {% for col, w in [('description','d'),('quantity','n'),('unit','u'),('unit_price','m'),('discount','m'),('line_total','m'),('line_tax','m')] %}
+          {% set fname = 'items.' ~ r ~ '.' ~ col %}{% set iss = by_field.get(fname, []) %}{% set v = it[col] %}
+          <td class="c-{{ w }} {{ 'err' if iss }}"><input name="item_{{ r }}_{{ col }}" {% if w in ('n','m') %}dir="ltr"{% endif %} value="{% if v is none %}{% elif w == 'm' %}{{ v|money }}{% elif col == 'quantity' %}{{ (v|int if v == v|int else v)|fa }}{% else %}{{ v }}{% endif %}" {% if not editable %}readonly{% endif %} {% if iss %}title="{{ iss[0].message_fa }}"{% endif %}></td>
+        {% endfor %}</tr>{% endfor %}</tbody></table></div>
+    </fieldset>
+    <fieldset><legend>جمع‌ها</legend>
+      {{ fld('subtotal', 'جمع کل', inv.subtotal, 'money') }}{{ fld('total_discount', 'تخفیف کل', inv.total_discount, 'money') }}{{ fld('vat', 'مالیات بر ارزش افزوده', inv.vat, 'money') }}
+      {{ fld('other_levies', 'عوارض', inv.other_levies, 'money') }}{{ fld('payable', 'مبلغ قابل پرداخت', inv.payable, 'money') }}
+    </fieldset>
+    <fieldset><legend>پرداخت</legend>{{ fld('payment_method', 'روش پرداخت', inv.payment_method) }}{{ fld('notes', 'توضیحات', inv.notes, '', 'wide') }}</fieldset>
+    {% if inv.quality_notes %}<p class="muted">یادداشت‌های پردازش: {{ inv.quality_notes|join('، ') }}</p>{% endif %}
+    {% if editable %}<div class="actions">
+      {% if errors and inv.status != 'confirmed' %}<label class="chk"><input type="checkbox" name="override" value="1"> با وجود خطاها تأیید می‌کنم</label>{% endif %}
+      <button type="button" class="primary" hx-post="/invoices/{{ inv.id }}/confirm" hx-include="#rv">{{ 'ذخیرهٔ دوباره' if inv.status == 'confirmed' else 'تأیید و ذخیره در دیتابیس' }}</button>
+      <button type="button" hx-post="/invoices/{{ inv.id }}/save" hx-include="#rv">ذخیرهٔ تغییرات</button>
+      <button type="button" class="ghost" data-del="{{ inv.id }}">حذف</button>
+    </div>{% endif %}
+  </form>
+</div>
+{% endif %}

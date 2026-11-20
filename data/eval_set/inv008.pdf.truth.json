@@ -1,0 +1,106 @@
+{
+ "id": "inv008",
+ "direction": "sale",
+ "category": "فروش کالا",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "شرکت پخش مواد غذایی نیک",
+  "economic_code": "906044319829",
+  "national_id": "65724920864",
+  "national_code": null,
+  "registration_no": "88909",
+  "address": "تبریز، جاده مخصوص کرج، پلاک 23",
+  "phone": "02100251678"
+ },
+ "header": {
+  "invoice_no": "86187",
+  "date_jalali": "1405/02/24",
+  "unique_tax_id": "A9485717625"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "میز کنفرانس ده‌نفره",
+   "quantity": 8,
+   "unit": "عدد",
+   "unit_price": 33851000,
+   "discount": 0,
+   "line_total": 270808000,
+   "line_tax": 27080800
+  },
+  {
+   "row": 2,
+   "description": "خدمات نصب و راه‌اندازی",
+   "quantity": 2,
+   "unit": "ساعت",
+   "unit_price": 1427000,
+   "discount": 285000,
+   "line_total": 2569000,
+   "line_tax": 256900
+  },
+  {
+   "row": 3,
+   "description": "کابینت فلزی اداری",
+   "quantity": 11,
+   "unit": "عدد",
+   "unit_price": 13412000,
+   "discount": 0,
+   "line_total": 147532000,
+   "line_tax": 14753200
+  },
+  {
+   "row": 4,
+   "description": "خدمات نصب و راه‌اندازی",
+   "quantity": 5,
+   "unit": "ساعت",
+   "unit_price": 978000,
+   "discount": 0,
+   "line_total": 4890000,
+   "line_tax": 489000
+  },
+  {
+   "row": 5,
+   "description": "میز کنفرانس ده‌نفره",
+   "quantity": 12,
+   "unit": "عدد",
+   "unit_price": 31886000,
+   "discount": 0,
+   "line_total": 382632000,
+   "line_tax": 38263200
+  }
+ ],
+ "totals": {
+  "subtotal": 808716000,
+  "total_discount": 285000,
+  "vat": 80843100,
+  "other_levies": 0,
+  "payable": 889274100
+ },
+ "payment": {
+  "method": "نسیه",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "pdf_scan",
+  "digits": "en",
+  "style": "a"
+ },
+ "file": "inv008.pdf",
+ "sha256": "c21230c0661bb9e182af7b1509e252b946aa75a30f163b75bf54f873a9b83fde"
+}

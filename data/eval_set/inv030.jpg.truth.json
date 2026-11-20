@@ -1,0 +1,88 @@
+{
+ "id": "inv030",
+ "direction": "purchase",
+ "category": "مواد اولیه",
+ "currency": "IRR",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "unofficial",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت فولاد پارس‌آریا",
+  "economic_code": "822765444463",
+  "national_id": "47861221386",
+  "national_code": null,
+  "registration_no": "837576",
+  "address": "کرج، جاده مخصوص کرج، پلاک 64",
+  "phone": "02112581535"
+ },
+ "buyer": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "header": {
+  "invoice_no": "33258",
+  "date_jalali": "1405/02/14",
+  "unique_tax_id": null
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "رنگ پایه روغنی سفید",
+   "quantity": 1,
+   "unit": "گالن",
+   "unit_price": 12260000,
+   "discount": 1230000,
+   "line_total": 11030000,
+   "line_tax": 0
+  },
+  {
+   "row": 2,
+   "description": "رنگ پایه روغنی سفید",
+   "quantity": 10,
+   "unit": "گالن",
+   "unit_price": 12800000,
+   "discount": 0,
+   "line_total": 128000000,
+   "line_tax": 0
+  },
+  {
+   "row": 3,
+   "description": "پروفیل ۴۰×۴۰ گالوانیزه",
+   "quantity": 10,
+   "unit": "شاخه",
+   "unit_price": 5120000,
+   "discount": 5120000,
+   "line_total": 46080000,
+   "line_tax": 0
+  }
+ ],
+ "totals": {
+  "subtotal": 191460000,
+  "total_discount": 6350000,
+  "vat": 0,
+  "other_levies": 0,
+  "payable": 185110000
+ },
+ "payment": {
+  "method": "نسیه",
+  "notes": null
+ },
+ "defects": [
+  "BAD_LEGAL_ID"
+ ],
+ "injection": false,
+ "render": {
+  "quality": "skewed",
+  "digits": "en",
+  "style": "b"
+ },
+ "file": "inv030.jpg",
+ "sha256": "b2ff6721c16890b971cb618f375aabac20cc1a1f4b2926d0afc8b92176e51917"
+}

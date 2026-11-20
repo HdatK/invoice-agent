@@ -1,0 +1,106 @@
+{
+ "id": "inv067",
+ "direction": "sale",
+ "category": "فروش کالا",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "فروشگاه مبلمان آسایش",
+  "economic_code": "073587355706",
+  "national_id": "36060710430",
+  "national_code": null,
+  "registration_no": "95545",
+  "address": "شیراز، خیابان ولیعصر، پلاک 69",
+  "phone": "02154409103"
+ },
+ "header": {
+  "invoice_no": "89605",
+  "date_jalali": "1405/01/12",
+  "unique_tax_id": "A5632844756"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "کابینت فلزی اداری",
+   "quantity": 5,
+   "unit": "عدد",
+   "unit_price": 9281000,
+   "discount": 2320000,
+   "line_total": 44085000,
+   "line_tax": 4408500
+  },
+  {
+   "row": 2,
+   "description": "صندلی مدیریتی",
+   "quantity": 3,
+   "unit": "عدد",
+   "unit_price": 8216000,
+   "discount": 1232000,
+   "line_total": 23416000,
+   "line_tax": 2341600
+  },
+  {
+   "row": 3,
+   "description": "طراحی و ساخت پارتیشن اداری",
+   "quantity": 5,
+   "unit": "متر",
+   "unit_price": 3282000,
+   "discount": 1641000,
+   "line_total": 14769000,
+   "line_tax": 1476900
+  },
+  {
+   "row": 4,
+   "description": "طراحی و ساخت پارتیشن اداری",
+   "quantity": 9,
+   "unit": "متر",
+   "unit_price": 4145000,
+   "discount": 3730000,
+   "line_total": 33575000,
+   "line_tax": 3357500
+  },
+  {
+   "row": 5,
+   "description": "میز کنفرانس ده‌نفره",
+   "quantity": 4,
+   "unit": "عدد",
+   "unit_price": 35377000,
+   "discount": 0,
+   "line_total": 141508000,
+   "line_tax": 14150800
+  }
+ ],
+ "totals": {
+  "subtotal": 266276000,
+  "total_discount": 8923000,
+  "vat": 25735300,
+  "other_levies": 0,
+  "payable": 283088300
+ },
+ "payment": {
+  "method": "نقدی",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "skewed",
+  "digits": "fa",
+  "style": "a"
+ },
+ "file": "inv067.jpg",
+ "sha256": "c6d054a43c432987cc3b0fc72733d98b17b2c5abcaad650502b29d06f6b1325d"
+}

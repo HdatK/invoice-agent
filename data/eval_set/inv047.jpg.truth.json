@@ -1,0 +1,66 @@
+{
+ "id": "inv047",
+ "direction": "purchase",
+ "category": "مواد اولیه",
+ "currency": "IRR",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت فولاد پارس‌آریا",
+  "economic_code": "822765444463",
+  "national_id": "47861221383",
+  "national_code": null,
+  "registration_no": "837576",
+  "address": "کرج، جاده مخصوص کرج، پلاک 64",
+  "phone": "02112581535"
+ },
+ "buyer": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "header": {
+  "invoice_no": "55575",
+  "date_jalali": "1405/04/19",
+  "unique_tax_id": "A7190627909"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "پروفیل ۴۰×۴۰ گالوانیزه",
+   "quantity": 11,
+   "unit": "شاخه",
+   "unit_price": 5450000,
+   "discount": 6000000,
+   "line_total": 53950000,
+   "line_tax": 5395000
+  }
+ ],
+ "totals": {
+  "subtotal": 59950000,
+  "total_discount": 6000000,
+  "vat": 5395000,
+  "other_levies": 0,
+  "payable": 59345000
+ },
+ "payment": {
+  "method": "چک",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "clean",
+  "digits": "fa",
+  "style": "a"
+ },
+ "file": "inv047.jpg",
+ "sha256": "256d2e2e9c21778f1dd049fe1ac1aac8f657368f64c61a50470f77dedb506a15"
+}

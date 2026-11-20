@@ -1,0 +1,108 @@
+{
+ "id": "inv016",
+ "direction": "sale",
+ "category": "فروش کالا",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "فروشگاه مبلمان آسایش",
+  "economic_code": "073587355706",
+  "national_id": "36060710430",
+  "national_code": null,
+  "registration_no": "95545",
+  "address": "شیراز، خیابان ولیعصر، پلاک 69",
+  "phone": "02154409103"
+ },
+ "header": {
+  "invoice_no": "54080",
+  "date_jalali": "1405/02/24",
+  "unique_tax_id": "A5320207096"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "کابینت فلزی اداری",
+   "quantity": 11,
+   "unit": "عدد",
+   "unit_price": 10373000,
+   "discount": 5705000,
+   "line_total": 108398000,
+   "line_tax": 10839800
+  },
+  {
+   "row": 2,
+   "description": "صندلی مدیریتی",
+   "quantity": 7,
+   "unit": "عدد",
+   "unit_price": 6688000,
+   "discount": 0,
+   "line_total": 46816000,
+   "line_tax": 4681600
+  },
+  {
+   "row": 3,
+   "description": "خدمات نصب و راه‌اندازی",
+   "quantity": 1,
+   "unit": "ساعت",
+   "unit_price": 1228000,
+   "discount": 123000,
+   "line_total": 1105000,
+   "line_tax": 110500
+  },
+  {
+   "row": 4,
+   "description": "صندلی مدیریتی",
+   "quantity": 7,
+   "unit": "عدد",
+   "unit_price": 7247000,
+   "discount": 0,
+   "line_total": 50729000,
+   "line_tax": 5072900
+  },
+  {
+   "row": 5,
+   "description": "صندلی مدیریتی",
+   "quantity": 11,
+   "unit": "عدد",
+   "unit_price": 6327000,
+   "discount": 3480000,
+   "line_total": 66117000,
+   "line_tax": 6611700
+  }
+ ],
+ "totals": {
+  "subtotal": 282473000,
+  "total_discount": 9308000,
+  "vat": 27316500,
+  "other_levies": 0,
+  "payable": 300531500
+ },
+ "payment": {
+  "method": "کارت‌به‌کارت",
+  "notes": null
+ },
+ "defects": [
+  "PAYABLE_MISMATCH"
+ ],
+ "injection": false,
+ "render": {
+  "quality": "pdf_text",
+  "digits": "en",
+  "style": "a"
+ },
+ "file": "inv016.pdf",
+ "sha256": "371edd112900a7342c6766d9aea2f02e6a6280fbba47582affd23da180286156"
+}

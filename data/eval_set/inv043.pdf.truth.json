@@ -1,0 +1,66 @@
+{
+ "id": "inv043",
+ "direction": "sale",
+ "category": "فروش کالا",
+ "currency": "IRR",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "proforma",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "کلینیک تخصصی مهرگان",
+  "economic_code": "574911862527",
+  "national_id": "60189555971",
+  "national_code": null,
+  "registration_no": "114710",
+  "address": "تبریز، خیابان ملاصدرا، پلاک 167",
+  "phone": "02197465075"
+ },
+ "header": {
+  "invoice_no": "77693",
+  "date_jalali": "1405/04/29",
+  "unique_tax_id": null
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "کابینت فلزی اداری",
+   "quantity": 11,
+   "unit": "عدد",
+   "unit_price": 114020000,
+   "discount": 0,
+   "line_total": 1254220000,
+   "line_tax": 125422000
+  }
+ ],
+ "totals": {
+  "subtotal": 1254220000,
+  "total_discount": 0,
+  "vat": 125422000,
+  "other_levies": 0,
+  "payable": 1379642000
+ },
+ "payment": {
+  "method": "پایانه فروش",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "pdf_text",
+  "digits": "fa",
+  "style": "a"
+ },
+ "file": "inv043.pdf",
+ "sha256": "4800e5ec1b3b4082a265441a37cdeeb4ffc11e20d7679580a0fffc0dd94f6f87"
+}

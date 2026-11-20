@@ -1,0 +1,96 @@
+{
+ "id": "inv038",
+ "direction": "sale",
+ "category": "فروش کالا",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "دفتر مهندسی طرح و ساخت",
+  "economic_code": "003761436537",
+  "national_id": "05656304811",
+  "national_code": null,
+  "registration_no": "73433",
+  "address": "مشهد، جاده مخصوص کرج، پلاک 69",
+  "phone": "02141979237"
+ },
+ "header": {
+  "invoice_no": "43204",
+  "date_jalali": "1405/04/21",
+  "unique_tax_id": "A9545814166"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "صندلی مدیریتی",
+   "quantity": 10,
+   "unit": "عدد",
+   "unit_price": 8047000,
+   "discount": 0,
+   "line_total": 80470000,
+   "line_tax": 8047000
+  },
+  {
+   "row": 2,
+   "description": "خدمات نصب و راه‌اندازی",
+   "quantity": 8,
+   "unit": "ساعت",
+   "unit_price": 1380000,
+   "discount": 0,
+   "line_total": 11040000,
+   "line_tax": 1104000
+  },
+  {
+   "row": 3,
+   "description": "صندلی مدیریتی",
+   "quantity": 5,
+   "unit": "عدد",
+   "unit_price": 6980000,
+   "discount": 1745000,
+   "line_total": 33155000,
+   "line_tax": 3315500
+  },
+  {
+   "row": 4,
+   "description": "طراحی و ساخت پارتیشن اداری",
+   "quantity": 9,
+   "unit": "متر",
+   "unit_price": 5497000,
+   "discount": 2474000,
+   "line_total": 46999000,
+   "line_tax": 4699900
+  }
+ ],
+ "totals": {
+  "subtotal": 175883000,
+  "total_discount": 4219000,
+  "vat": 17166400,
+  "other_levies": 0,
+  "payable": 188830400
+ },
+ "payment": {
+  "method": "نسیه",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "clean",
+  "digits": "en",
+  "style": "b"
+ },
+ "file": "inv038.jpg",
+ "sha256": "4ef62b367cd37eaa868af51d967b42df149146ec2a5f48865d147b1c1dc44c91"
+}

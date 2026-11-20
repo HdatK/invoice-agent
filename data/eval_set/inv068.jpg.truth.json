@@ -1,0 +1,108 @@
+{
+ "id": "inv068",
+ "direction": "sale",
+ "category": "فروش خدمات",
+ "currency": "IRR",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "فروشگاه مبلمان آسایش",
+  "economic_code": "073587355706",
+  "national_id": "36060710430",
+  "national_code": null,
+  "registration_no": "95545",
+  "address": "شیراز، خیابان ولیعصر، پلاک 69",
+  "phone": "02154409103"
+ },
+ "header": {
+  "invoice_no": "92911",
+  "date_jalali": "1405/04/25",
+  "unique_tax_id": "A1067757717"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "خدمات نصب و راه‌اندازی",
+   "quantity": 4,
+   "unit": "ساعت",
+   "unit_price": 12580000,
+   "discount": 5030000,
+   "line_total": 45290000,
+   "line_tax": 4529000
+  },
+  {
+   "row": 2,
+   "description": "میز کنفرانس ده‌نفره",
+   "quantity": 2,
+   "unit": "عدد",
+   "unit_price": 385180000,
+   "discount": 0,
+   "line_total": 770360000,
+   "line_tax": 77036000
+  },
+  {
+   "row": 3,
+   "description": "صندلی مدیریتی",
+   "quantity": 4,
+   "unit": "عدد",
+   "unit_price": 58210000,
+   "discount": 23280000,
+   "line_total": 209560000,
+   "line_tax": 20956000
+  },
+  {
+   "row": 4,
+   "description": "کابینت فلزی اداری",
+   "quantity": 8,
+   "unit": "عدد",
+   "unit_price": 155220000,
+   "discount": 0,
+   "line_total": 1241760000,
+   "line_tax": 124176000
+  },
+  {
+   "row": 5,
+   "description": "میز کنفرانس ده‌نفره",
+   "quantity": 5,
+   "unit": "عدد",
+   "unit_price": 317500000,
+   "discount": 158750000,
+   "line_total": 1428750000,
+   "line_tax": 142875000
+  }
+ ],
+ "totals": {
+  "subtotal": 3882780000,
+  "total_discount": 187060000,
+  "vat": 554368000,
+  "other_levies": 0,
+  "payable": 4250088000
+ },
+ "payment": {
+  "method": "چک",
+  "notes": null
+ },
+ "defects": [
+  "VAT_MISMATCH"
+ ],
+ "injection": false,
+ "render": {
+  "quality": "blurry",
+  "digits": "fa",
+  "style": "b"
+ },
+ "file": "inv068.jpg",
+ "sha256": "1fb545a4acc8476bc75ac2469e34aa453ea3cb125df93947ba87f0ac03305bae"
+}

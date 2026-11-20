@@ -1,0 +1,66 @@
+{
+ "id": "inv060",
+ "direction": "sale",
+ "category": "فروش کالا",
+ "currency": "IRR",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "unofficial",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "دفتر مهندسی طرح و ساخت",
+  "economic_code": "003761436537",
+  "national_id": "05656304811",
+  "national_code": null,
+  "registration_no": "73433",
+  "address": "مشهد، جاده مخصوص کرج، پلاک 69",
+  "phone": "02141979237"
+ },
+ "header": {
+  "invoice_no": "77534",
+  "date_jalali": "1405/04/20",
+  "unique_tax_id": null
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "میز کنفرانس ده‌نفره",
+   "quantity": 8,
+   "unit": "عدد",
+   "unit_price": 343950000,
+   "discount": 0,
+   "line_total": 2751600000,
+   "line_tax": 0
+  }
+ ],
+ "totals": {
+  "subtotal": 2751600000,
+  "total_discount": 0,
+  "vat": 0,
+  "other_levies": 0,
+  "payable": 2751600000
+ },
+ "payment": {
+  "method": "پایانه فروش",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "lowlight",
+  "digits": "fa",
+  "style": "a"
+ },
+ "file": "inv060.jpg",
+ "sha256": "e88063374764656aa751bb1ce957af1c801d4d6c0b64898a34ded95f1304d811"
+}

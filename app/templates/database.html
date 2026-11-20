@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}دیتابیس{% endblock %}
+{% block main %}
+<form id="df" class="filters" hx-get="/database/table" hx-target="#tbl" hx-trigger="change, keyup changed delay:400ms from:#q" hx-push-url="false">
+  <label>جست‌وجو <input id="q" name="q" placeholder="شماره، فروشنده، خریدار" value="{{ f.q }}"></label>
+  <label>از تاریخ <input name="date_from" dir="ltr" size="10" placeholder="۱۴۰۵/۰۱/۰۱" value="{{ f.date_from }}"></label>
+  <label>تا تاریخ <input name="date_to" dir="ltr" size="10" placeholder="۱۴۰۵/۱۲/۲۹" value="{{ f.date_to }}"></label>
+  <label>نوع <select name="direction"><option value="">همه</option><option value="purchase">خرید</option><option value="sale">فروش</option></select></label>
+  <label>دسته <select name="category"><option value="">همه</option>{% for c in cats %}<option value="{{ c.id }}">{{ c.name_fa }}</option>{% endfor %}</select></label>
+  <label>وضعیت <select name="status"><option value="">همه</option><option value="confirmed">تأییدشده</option><option value="needs_review">نیازمند بازبینی</option><option value="failed">ناموفق</option></select></label>
+  <input type="hidden" name="sort" value="{{ f.sort }}"><input type="hidden" name="order" value="{{ f.order }}">
+</form>
+<div id="tbl">{% include "_table.html" %}</div>
+{% endblock %}

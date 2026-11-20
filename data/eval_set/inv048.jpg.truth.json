@@ -1,0 +1,66 @@
+{
+ "id": "inv048",
+ "direction": "sale",
+ "category": "فروش خدمات",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "buyer": {
+  "name": "فروشگاه مبلمان آسایش",
+  "economic_code": "073587355706",
+  "national_id": "36060710430",
+  "national_code": null,
+  "registration_no": "95545",
+  "address": "شیراز، خیابان ولیعصر، پلاک 69",
+  "phone": "02154409103"
+ },
+ "header": {
+  "invoice_no": "93723",
+  "date_jalali": "1405/05/04",
+  "unique_tax_id": "A5877343522"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "طراحی و ساخت پارتیشن اداری",
+   "quantity": 4,
+   "unit": "متر",
+   "unit_price": 4928000,
+   "discount": 0,
+   "line_total": 19712000,
+   "line_tax": 1971200
+  }
+ ],
+ "totals": {
+  "subtotal": 19712000,
+  "total_discount": 0,
+  "vat": 1971200,
+  "other_levies": 0,
+  "payable": 21683200
+ },
+ "payment": {
+  "method": "نقدی",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "skewed",
+  "digits": "fa",
+  "style": "a"
+ },
+ "file": "inv048.jpg",
+ "sha256": "e0a8dca42bcae24047057802077c9604de1aa7de8325a4556faceaa721504ef6"
+}

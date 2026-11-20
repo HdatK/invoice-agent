@@ -1,0 +1,39 @@
+{% macro params(sort, order, page=1) -%}
+{{ {'q': f.q, 'date_from': f.date_from, 'date_to': f.date_to, 'direction': f.direction, 'category': f.category or '', 'status': f.status, 'sort': sort, 'order': order, 'page': page}|urlencode }}
+{%- endmacro %}
+{% macro th(label, key) -%}
+<th><a href="#" hx-get="/database/table?{{ params(key, 'asc' if (f.sort == key and f.order == 'desc') else 'desc') }}" hx-target="#tbl">{{ label }}{% if f.sort == key %} {{ '▲' if f.order == 'asc' else '▼' }}{% endif %}</a></th>
+{%- endmacro %}
+<div class="tbar">
+  <span>{{ total|fa }} فاکتور</span>
+  <span class="exports">دانلود (با همین فیلترها):
+    <a href="/export.xlsx?{{ params(f.sort, f.order) }}">Excel</a>
+    <a href="/export.csv?{{ params(f.sort, f.order) }}">CSV فاکتورها</a>
+    <a href="/export.csv?items=1&{{ params(f.sort, f.order) }}">CSV ردیف‌ها</a></span>
+</div>
+<div class="scroll"><table class="db">
+  <thead><tr>{{ th('شماره', 'no') }}{{ th('تاریخ', 'date') }}<th>نوع</th>{{ th('فروشنده', 'seller') }}<th>خریدار</th><th>دسته</th>{{ th('مبلغ قابل پرداخت', 'payable') }}{{ th('وضعیت', 'status') }}<th></th></tr></thead>
+  <tbody>
+  {% for r in rows %}
+  <tr id="r-{{ r.id }}" class="{{ 'sample' if r.visitor_id is none }}">
+    <td>{{ r.invoice_no|fa if r.invoice_no else '—' }}</td>
+    <td dir="ltr">{{ r.date_jalali|fa if r.date_jalali else '—' }}</td>
+    <td>{{ r.direction|direction }}{% if r.invoice_kind == 'proforma' %} · پیش‌فاکتور{% endif %}</td>
+    <td>{{ r.seller_name or '—' }}</td><td>{{ r.buyer_name or '—' }}</td>
+    <td>{{ r.category.name_fa if r.category else '—' }}</td>
+    <td class="num">{{ r.payable|money }} <small>{{ {'IRT':'تومان','IRR':'ریال'}.get(r.currency, '؟') }}</small></td>
+    <td><span class="badge b-{{ r.status }}">{{ r.status|status }}</span>{% if r.issues|selectattr('severity','eq','error')|list %} <span class="dot" title="خطای اعتبارسنجی"></span>{% endif %}</td>
+    <td class="acts">
+      <button class="link" hx-get="/invoices/{{ r.id }}/detail" hx-target="#d-{{ r.id }}" hx-swap="innerHTML">ردیف‌ها</button>
+      {% if r.source_file and r.source_file.path %}<a href="/invoices/{{ r.id }}/file" target="_blank" rel="noopener">تصویر</a>{% else %}<span class="muted" title="فایل حذف شده یا موجود نیست">بدون تصویر</span>{% endif %}
+      {% if r.visitor_id == vid %}<a href="/upload?inv={{ r.id }}">ویرایش</a><button class="link danger" data-del="{{ r.id }}">حذف</button>{% else %}<span class="muted" title="داده نمونه فقط‌خواندنی است">نمونه</span>{% endif %}
+    </td>
+  </tr>
+  <tr class="det"><td colspan="9" id="d-{{ r.id }}"></td></tr>
+  {% else %}<tr><td colspan="9" class="muted">نتیجه‌ای پیدا نشد.</td></tr>{% endfor %}
+  </tbody></table></div>
+<div class="pager">
+  {% if pg > 1 %}<a href="#" hx-get="/database/table?{{ params(f.sort, f.order, pg - 1) }}" hx-target="#tbl">قبلی</a>{% endif %}
+  <span>صفحه {{ pg|fa }} از {{ (((total - 1) // per) + 1 if total else 1)|fa }}</span>
+  {% if pg * per < total %}<a href="#" hx-get="/database/table?{{ params(f.sort, f.order, pg + 1) }}" hx-target="#tbl">بعدی</a>{% endif %}
+</div>

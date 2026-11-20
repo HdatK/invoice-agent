@@ -1,0 +1,18 @@
+fastapi>=0.115
+uvicorn>=0.30
+sqlalchemy>=2.0
+jinja2>=3.1
+python-multipart>=0.0.9
+pydantic>=2.7
+pymupdf>=1.24
+pillow>=10.3
+opencv-python-headless>=4.9
+numpy>=1.26
+openpyxl>=3.1
+persiantools>=3.0
+anthropic>=0.40
+# sample generator (Persian text shaping) and tests
+arabic-reshaper>=3.0
+python-bidi>=0.4
+pytest>=8.0
+httpx>=0.27

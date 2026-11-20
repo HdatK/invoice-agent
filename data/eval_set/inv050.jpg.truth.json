@@ -1,0 +1,96 @@
+{
+ "id": "inv050",
+ "direction": "purchase",
+ "category": "حمل‌ونقل",
+ "currency": "IRR",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "باربری سریع‌الوصول",
+  "economic_code": "212233079244",
+  "national_id": "02685995282",
+  "national_code": null,
+  "registration_no": "78666",
+  "address": "مشهد، بلوار کشاورز، پلاک 125",
+  "phone": "02160313721"
+ },
+ "buyer": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "header": {
+  "invoice_no": "40516",
+  "date_jalali": "1405/01/05",
+  "unique_tax_id": "A8386713769"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "حمل بار درون‌شهری",
+   "quantity": 4,
+   "unit": "سرویس",
+   "unit_price": 16920000,
+   "discount": 0,
+   "line_total": 67680000,
+   "line_tax": 6768000
+  },
+  {
+   "row": 2,
+   "description": "کرایه حمل با کامیون ده‌چرخ",
+   "quantity": 3,
+   "unit": "سرویس",
+   "unit_price": 57230000,
+   "discount": 0,
+   "line_total": 171690000,
+   "line_tax": 17169000
+  },
+  {
+   "row": 3,
+   "description": "حمل بار درون‌شهری",
+   "quantity": 7,
+   "unit": "سرویس",
+   "unit_price": 21340000,
+   "discount": 7470000,
+   "line_total": 141910000,
+   "line_tax": 14191000
+  },
+  {
+   "row": 4,
+   "description": "حمل بار درون‌شهری",
+   "quantity": 3,
+   "unit": "سرویس",
+   "unit_price": 24310000,
+   "discount": 0,
+   "line_total": 72930000,
+   "line_tax": 7293000
+  }
+ ],
+ "totals": {
+  "subtotal": 461680000,
+  "total_discount": 7470000,
+  "vat": 45421000,
+  "other_levies": 0,
+  "payable": 499631000
+ },
+ "payment": {
+  "method": "چک",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "blurry",
+  "digits": "ar",
+  "style": "a"
+ },
+ "file": "inv050.jpg",
+ "sha256": "33696678ed5ff8f9f1ac495d4f29a03fee93d113b074d92ecf5a0ef77ed4cf63"
+}

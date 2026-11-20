@@ -1,0 +1,76 @@
+{
+ "id": "inv017",
+ "direction": "purchase",
+ "category": "تجهیزات",
+ "currency": "IRR",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "unofficial",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "فروشگاه رایانه امید",
+  "economic_code": "116372651676",
+  "national_id": "12220297296",
+  "national_code": null,
+  "registration_no": "528820",
+  "address": "تهران، بلوار کشاورز، پلاک 136",
+  "phone": "02126330434"
+ },
+ "buyer": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "header": {
+  "invoice_no": "20590",
+  "date_jalali": "1405/05/04",
+  "unique_tax_id": null
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "میز اداری",
+   "quantity": 4,
+   "unit": "عدد",
+   "unit_price": 63500000,
+   "discount": 12700000,
+   "line_total": 241300000,
+   "line_tax": 0
+  },
+  {
+   "row": 2,
+   "description": "میز اداری",
+   "quantity": 3,
+   "unit": "عدد",
+   "unit_price": 92180000,
+   "discount": 0,
+   "line_total": 276540000,
+   "line_tax": 0
+  }
+ ],
+ "totals": {
+  "subtotal": 530540000,
+  "total_discount": 12700000,
+  "vat": 0,
+  "other_levies": 0,
+  "payable": 517840000
+ },
+ "payment": {
+  "method": "کارت‌به‌کارت",
+  "notes": null
+ },
+ "defects": [],
+ "injection": false,
+ "render": {
+  "quality": "pdf_scan",
+  "digits": "fa",
+  "style": "a"
+ },
+ "file": "inv017.pdf",
+ "sha256": "d91c8238a189dcb1ff20d67aa0cd3c486e38745bee2533b94dd701012497d000"
+}

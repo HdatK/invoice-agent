@@ -1,0 +1,88 @@
+{
+ "id": "inv028",
+ "direction": "purchase",
+ "category": "مواد اولیه",
+ "currency": "IRT",
+ "document": {
+  "is_invoice": true,
+  "invoice_kind": "official_sale",
+  "handwritten": false
+ },
+ "seller": {
+  "name": "شرکت فولاد پارس‌آریا",
+  "economic_code": "822765444463",
+  "national_id": "47861221383",
+  "national_code": null,
+  "registration_no": "837576",
+  "address": "کرج، جاده مخصوص کرج، پلاک 64",
+  "phone": "02112581535"
+ },
+ "buyer": {
+  "name": "شرکت نمونه‌پردازان آریا",
+  "address": "تهران، خیابان ولیعصر، پلاک ۱۲۰",
+  "phone": "02188776655",
+  "economic_code": "411100000001",
+  "national_id": "10380284790",
+  "registration_no": "445566",
+  "national_code": null
+ },
+ "header": {
+  "invoice_no": "15221",
+  "date_jalali": "1405/13/05",
+  "unique_tax_id": "A1026674670"
+ },
+ "items": [
+  {
+   "row": 1,
+   "description": "پروفیل ۴۰×۴۰ گالوانیزه",
+   "quantity": 6,
+   "unit": "شاخه",
+   "unit_price": 507000,
+   "discount": 0,
+   "line_total": 3042000,
+   "line_tax": 304200
+  },
+  {
+   "row": 2,
+   "description": "ورق فولادی ST37 سایز ۱۰۰×۲۰۰",
+   "quantity": 1,
+   "unit": "برگ",
+   "unit_price": 3637000,
+   "discount": 364000,
+   "line_total": 3273000,
+   "line_tax": 327300
+  },
+  {
+   "row": 3,
+   "description": "چسب صنعتی دوجزئی",
+   "quantity": 9,
+   "unit": "بسته",
+   "unit_price": 193000,
+   "discount": 87000,
+   "line_total": 1650000,
+   "line_tax": 165000
+  }
+ ],
+ "totals": {
+  "subtotal": 8416000,
+  "total_discount": 451000,
+  "vat": 796500,
+  "other_levies": 0,
+  "payable": 8761500
+ },
+ "payment": {
+  "method": "کارت‌به‌کارت",
+  "notes": null
+ },
+ "defects": [
+  "BAD_DATE"
+ ],
+ "injection": false,
+ "render": {
+  "quality": "clean",
+  "digits": "en",
+  "style": "a"
+ },
+ "file": "inv028.jpg",
+ "sha256": "b6d46cdd71dec49d477d40af8bc00b8c1bc05b275d89a483ac5b330b6cac433e"
+}
